@@ -1,0 +1,112 @@
+.companyTitleBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    background-color: #FFFFFF;
+}
+
+.companyWrapper {
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    background-color: #FFFFFF;
+    padding: 35px;
+    margin-bottom: 10px;
+}
+
+.titleLine {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70px;
+    height: 3px;
+    background-color: red;
+}
+
+.infoCompany {
+    color: #777777;
+}
+
+.titleBox {
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    /*background-color: #FFFFFF;*/
+    padding-left: 100px;
+}
+
+.photoOneTitle {
+    margin-top: 35px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #212121;
+}
+
+.photoOneDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #646464;
+}
+
+.companyPhotoOne {
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    width: 480px;
+    height: 350px;
+    margin-left: 32px;
+
+}
+
+.companyPhotoFigureOne {
+    position: absolute;
+    z-index: 0;
+    border: 1.5px solid #2b9afc;
+    width: 480px;
+    height: 345px;
+    top: 40px;
+    right: 0;
+    margin-top: -1em;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+}
+
+.companyPhotoTwo {
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    width: 480px;
+    height: 350px;
+    margin-top: 7px;
+    margin-left: 11px;
+}
+
+.companyPhotoFigureTwo {
+    position: absolute;
+    z-index: 0;
+    border: 1.5px solid #2b9afc;
+    width: 480px;
+    height: 345px;
+    top: 0;
+    left: 0;
+    margin-top: -1em;
+    border-top-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+}
+
+.dazaLooks {
+    margin: 3px;
+    width: 100px;
+    height: 50px;
+}
+
+

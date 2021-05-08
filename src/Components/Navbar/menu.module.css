@@ -1,0 +1,55 @@
+.navbar{
+    margin-top: 20px;
+}
+
+.logo{
+    margin-top: -20px;
+    margin-right: 220px;
+}
+
+.menuItem{
+    cursor: pointer;
+    display: inline;
+    list-style: none;
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #646464;;
+    transition: 0.2s;
+}
+
+.menuItem:hover{
+    color: #a0a0a0;;
+}
+
+.menuLanguage{
+    cursor: pointer;
+    display: inline;
+    list-style: none;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #7e7e7e;
+    transition: 0.2s;
+}
+.menuLanguage:hover{
+    color: #b7b7b7;;
+}
+
+.menuLanguageOne{
+    margin-left: 40px;
+    cursor: pointer;
+    display: inline;
+    list-style: none;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #7e7e7e;
+    transition: 0.2s;
+}
+.menuLanguageOne:hover{
+    color: #b7b7b7;;
+}
