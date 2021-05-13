@@ -1,16 +1,16 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
 import styles from './footer.module.css'
-import logo from '../../assets/footer/logo1.jpg'
+import {Col, Container, Row} from "react-bootstrap";
 import collect from '../../assets/footer/collect.png'
+import logofooter from '../../assets/footer/logoFooter.png'
 
 const Footer = (props) => {
     return (<>
-        <Container className={styles.footerWrapper}>
+        <Container fluid className={styles.footerWrapper}>
             <Row>
                 <Col xl={6}>
                     <div className={styles.wrapperContent}>
-                        <img src={logo}/>
+                        <img src={logofooter} className={styles.logo}/>
                         <p>© {new Date().getFullYear()} barcha huquqlar himoyalangan</p>
                     </div>
                 </Col>

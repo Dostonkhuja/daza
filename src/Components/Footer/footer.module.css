@@ -1,18 +1,28 @@
 
-.footerWrapper{
-    border-top-right-radius: 130px;
-    border-top-left-radius: 130px;
-    background-color: #89d4cf;
-    background-image: linear-gradient(315deg, #0b79a9 0%, #ffffff 64%);
+.footerWrapper {
+    width: 97.85%;
+    background-image: url("../../assets/footer/background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: #000000;
     font-size: 18px;
 }
 
-.wrapperContent{
-    margin-top: 80px;
-    margin-bottom: 80px;
+.wrapperContent {
+    padding-top: 150px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.logo{
+    margin-top: -80px;
+    width: 300px;
+}
+
+.wrapperContent p{
+    color: #FFFFFF;
 }

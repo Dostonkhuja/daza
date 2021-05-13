@@ -9442,6 +9442,11 @@ react-overlays@^5.0.0:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
+react-owl-carousel2@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-owl-carousel2/-/react-owl-carousel2-0.3.0.tgz#8a4daec35c4bf7d682f39c3c17d309a1ad31d793"
+  integrity sha512-f6RYdNn7BD3npMfS7d88utPMfje8qsAKAftUtQ0F9imjvKHtTngP013mdqOcllsJ/75f4/uu2vA14kVBwUvEZA==
+
 react-parallax@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/react-parallax/-/react-parallax-3.3.0.tgz#79f7a33451e7a419d0052f795c5d3655aa1e20b4"

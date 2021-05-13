@@ -1,37 +1,48 @@
 .navbar{
-    margin-top: 20px;
+    position: relative;
+    z-index: 50;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #263881;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .logo{
     margin-top: -20px;
-    margin-right: 220px;
+    margin-right: 70px;
+    margin-left: 30px;
+}
+
+.itemBlock{
+    width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .menuItem{
+    font-family: 'Rubik', sans-serif;
     cursor: pointer;
     display: inline;
     list-style: none;
-    margin-right: 30px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #646464;;
-    transition: 0.2s;
-}
-
-.menuItem:hover{
-    color: #a0a0a0;;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
 }
 
 .menuLanguage{
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
     cursor: pointer;
     display: inline;
     list-style: none;
-    margin-right: 5px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #7e7e7e;
+    margin-right: 23px;
+    color: #FFFFFF;
     transition: 0.2s;
 }
 .menuLanguage:hover{
@@ -39,15 +50,17 @@
 }
 
 .menuLanguageOne{
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
     margin-left: 40px;
     cursor: pointer;
     display: inline;
     list-style: none;
     margin-right: 5px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #7e7e7e;
+    color: #FFFFFF;
     transition: 0.2s;
 }
 .menuLanguageOne:hover{

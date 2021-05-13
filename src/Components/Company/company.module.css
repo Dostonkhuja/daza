@@ -1,112 +1,89 @@
-.companyTitleBox {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-    background-color: #FFFFFF;
+.backgroundBlock{
+    padding-top: 114px;
+    padding-bottom: 120px;
+    background-image: url("../../assets/company/backgroundPhotoOne.jpg");
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.companyWrapper {
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-    background-color: #FFFFFF;
-    padding: 35px;
-    margin-bottom: 10px;
+.backgroundBlock:before {
+    padding-top: 114px;
+    padding-bottom: 120px;
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0.93;
 }
 
-.titleLine {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 70px;
-    height: 3px;
-    background-color: red;
+.companyTitleBox{
+
+}
+.companyTitleBox h1{
+    text-align: center;
+    color: #222222;
+    font-family: 'Nunito', sans-serif;
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 800;
+    margin-bottom: 18px;
 }
 
-.infoCompany {
-    color: #777777;
+.companyTitleBox p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #848484;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    letter-spacing: 3px;
 }
 
-.titleBox {
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-    /*background-color: #FFFFFF;*/
-    padding-left: 100px;
+.DespcriptionBox{
+    padding: 50px;
+    padding-top: 150px;
+
 }
 
-.photoOneTitle {
-    margin-top: 35px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 48px;
-    color: #212121;
+.DespcriptionBox h3{
+    font-size: 26px;
+    line-height: 25px;
+    margin-top: 50px;
+    margin-bottom: 31px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    color: #222222;
 }
 
-.photoOneDescription {
-    font-style: normal;
-    font-weight: normal;
+.DespcriptionBox p{
+    font-family: 'Rubik', sans-serif;
+    color: #8c8c8c;
+    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: #646464;
 }
-
-.companyPhotoOne {
-    position: relative;
-    z-index: 1;
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-    width: 480px;
-    height: 350px;
-    margin-left: 32px;
-
-}
-
-.companyPhotoFigureOne {
-    position: absolute;
-    z-index: 0;
-    border: 1.5px solid #2b9afc;
-    width: 480px;
-    height: 345px;
-    top: 40px;
-    right: 0;
-    margin-top: -1em;
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-}
-
-.companyPhotoTwo {
-    position: relative;
-    z-index: 1;
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-    width: 480px;
-    height: 350px;
-    margin-top: 7px;
-    margin-left: 11px;
-}
-
-.companyPhotoFigureTwo {
-    position: absolute;
-    z-index: 0;
-    border: 1.5px solid #2b9afc;
-    width: 480px;
-    height: 345px;
-    top: 0;
-    left: 0;
-    margin-top: -1em;
-    border-top-left-radius: 130px;
-    border-bottom-right-radius: 130px;
-}
-
-.dazaLooks {
-    margin: 3px;
+.DespcriptionBox p img{
     width: 100px;
-    height: 50px;
+    margin-bottom: 20px;
 }
 
+.wrapperBoxImages{
+    position: relative;
 
+}
+.wrapperBoxImages img{
+    max-width: 100%;
+    margin-top: 300px;
+}
