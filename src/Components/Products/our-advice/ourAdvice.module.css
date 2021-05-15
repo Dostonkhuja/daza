@@ -22,7 +22,7 @@
 }
 
 .wrapperCarouselElemts {
-    height: 300px;
+    height: 450px;
     padding-bottom: 50px;
     margin-right: 80px;
     margin-left: 80px;
@@ -48,4 +48,56 @@
 
 .prevNextIcon{
     font-size: 130px;
+}
+
+@media (min-width: 1px)and (max-width: 575.9px) {
+    .backgroundCoruselBox {
+        background-size: 92%;
+        padding: 50px 10px 50px 10px;
+    }
+    .wrapperCarouselElemts {
+        height: 770px;
+        padding-bottom: 50px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 576px)and (max-width: 767.9px) {
+    .backgroundCoruselBox {
+        background-size: 92%;
+        padding: 50px 10px 50px 10px;
+    }
+    .wrapperCarouselElemts {
+        height: 470px;
+        padding-bottom: 50px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 991.9px) {
+    .backgroundCoruselBox {
+        background-size: 92%;
+        padding: 50px 10px 50px 10px;
+    }
+    .wrapperCarouselElemts {
+        height: 470px;
+        padding-bottom: 50px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 992px)and (max-width: 1199.9px) {
+    .backgroundCoruselBox {
+        background-size: 92%;
+        padding: 50px 10px 50px 10px;
+    }
+    .wrapperCarouselElemts {
+        height: 470px;
+        padding-bottom: 50px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
 }

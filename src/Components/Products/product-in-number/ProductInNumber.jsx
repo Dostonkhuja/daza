@@ -11,8 +11,7 @@ import iceCreamIcon from "../../../assets/products/icon/number-IceCream-icon.png
 import paralaxBackground from "../../../assets/products/layout-background/service-1.jpg";
 
 const ProductInNumber = () => {
-    return (
-        <Container fluid>
+    return <Container fluid>
             <Parallax strength={500}>
                 <Background className={styles.customBg}>
                     <img src={paralaxBackground}/>
@@ -20,7 +19,7 @@ const ProductInNumber = () => {
                 <Row>
                     <Col xl={12}>
                         <Row>
-                            <Col xl={3}>
+                            <Col xl={3} lg={3} md={6}>
                                 <div className={styles.NumberIconWrapper}>
                                     <img src={iceCreamIcon} className={styles.NumberIcon}/>
                                     <img src={bgIconProductNumber} className={styles.iconCover}/>
@@ -28,7 +27,7 @@ const ProductInNumber = () => {
                                     <h4>Muzqaymoq <br/> mahsulotlari</h4>
                                 </div>
                             </Col>
-                            <Col xl={3}>
+                            <Col xl={3} lg={3} md={6}>
                                 <div className={styles.NumberIconWrapper}>
                                     <img src={dairyIcon} className={styles.NumberIcon}/>
                                     <img src={bgIconProductNumber} className={styles.iconCover}/>
@@ -37,7 +36,7 @@ const ProductInNumber = () => {
                                 </div>
 
                             </Col>
-                            <Col xl={3}>
+                            <Col xl={3} lg={3} md={6}>
                                 <div className={styles.NumberIconWrapper}>
                                     <img src={seedsIcon} className={styles.NumberIcon}/>
                                     <img src={bgIconProductNumber} className={styles.iconCover}/>
@@ -45,7 +44,7 @@ const ProductInNumber = () => {
                                     <h4>qovurilgan kungaboqar pistasi</h4>
                                 </div>
                             </Col>
-                            <Col xl={3}>
+                            <Col xl={3} lg={3} md={6}>
                                 <div className={styles.NumberIconWrapper}>
                                     <img src={packageIcon} className={styles.NumberIcon}/>
                                     <img src={bgIconProductNumber} className={styles.iconCover}/>
@@ -58,7 +57,6 @@ const ProductInNumber = () => {
                 </Row>
             </Parallax>
         </Container>
-    );
-};
+}
 
-export default ProductInNumber;
+export default ProductInNumber

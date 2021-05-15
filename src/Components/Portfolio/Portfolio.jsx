@@ -3,6 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css'
 import 'react-owl-carousel2/src/owl.theme.green.css'
+import {Element} from 'react-scroll'
 
 import styles from './portfolio.module.css'
 import video01 from '../../assets/portfolio-video/01.mp4'
@@ -42,108 +43,115 @@ import semechka25 from "../../assets/products/product-galarey/semechki25.jpg";
 
 
 const Portfolio = (props) => {
-    const {Slider, Direction} = require('react-player-controls')
     const options = {
         items: 6,
         nav: true,
-        navText:["<div class='nav-btn prev-slide'>  <  </div>","<div class='nav-btn next-slide'> > </div>"],
+        navText: ["<div class='nav-btn prev-slide'>  <  </div>", "<div class='nav-btn next-slide'> > </div>"],
         rewind: true,
         autoplay: true,
         slideBy: 2,
     };
 
-
-    return (<>
-        <Container fluid className={styles.BackgroundImage}>
-            <Row>
-                <Col xl={{ span: 5, offset: 1 }} className={styles.wrapperVideoCol}>
-                    <div className={styles.VideoWrapper}>
-                    <ReactPlayer url={video01}
-                                 className='react-player'
-                                 width='100%'
-                                 height='80%'
-                                 controls
-                    />
-                    </div>
-                </Col>
-                <Col xl={5}>
-                    <div className={styles.videoAtBox}>
-                        <img src={rojka}/>
-                    </div>
-                </Col>
-
-                <Col xl={{ span: 5, offset: 1 }}>
-                    <div className={styles.videoAtBox}>
-                        <img src={semechka25}/>
-                    </div>
-                </Col>
-                <Col xl={5}>
-                    <div className={styles.VideoWrapper}>
-                        <ReactPlayer url={video03}
-                                     className='react-player'
-                                     width='100%'
-                                     height='80%'
-                                     controls
-                        />
-                    </div>
-                </Col>
-
-                <Col xl={{ span: 5, offset: 1 }}>
-                    <div className={styles.VideoWrapper}>
-                        <ReactPlayer url={video02}
-                                     className='react-player'
-                                     width='100%'
-                                     height='80%'
-                                     controls
-                        />
-                    </div>
-                </Col>
-                <Col xl={5}>
-                    <div className={styles.videoAtBox}>
-                        <img src={stakanchik}/>
-                    </div>
-                </Col>
-
-            </Row>
-            <Row>
-                <Col xl={12}  className={styles.carouselOwl}>
-                    <OwlCarousel
-                        options={options}
-                        // events={events}
+    return <>
+        <Element name='portfolio'>
+            <Container fluid className={styles.BackgroundImage}>
+                <Row>
+                    <Col
+                        xl={{span: 5, offset: 1}}
+                        lg={{span: 5, offset: 1}}
+                        md={{span: 5, offset: 1}}
+                        >
+                        <div className={styles.VideoWrapper}>
+                            <ReactPlayer url={video01}
+                                         className='react-player'
+                                         width='100%'
+                                         height='80%'
+                                         controls
+                            />
+                        </div>
+                    </Col>
+                    <Col xl={5} lg={5} md={5}>
+                        <div className={styles.videoAtBox}>
+                            <img src={rojka}/>
+                        </div>
+                    </Col>
+                    <Col xl={{span: 5, offset: 1}}
+                         lg={{span: 5, offset: 1}}
+                         md={{span: 5, offset: 1}}
                     >
-                        <div> <img src={lider} /> </div>
-                        <div> <img src={qaymoqliPlombir} /> </div>
-                        <div> <img src={qaymoqliPlombirShokolad} /> </div>
-                        <div> <img src={multimeva} /> </div>
-                        <div> <img src={mevaTamli} /> </div>
-                        <div> <img src={mevaTamli2} /> </div>
-                        <div> <img src={exotic} /> </div>
-                        <div> <img src={multifrukt2} /> </div>
-                        <div> <img src={shokolatGalzurniy} /> </div>
-                        <div> <img src={vaflenniy} /> </div>
-                        <div> <img src={rojka} /> </div>
-                        <div> <img src={stakanchik} /> </div>
-                        <div> <img src={palochka} /> </div>
-                        <div> <img src={ayranPalochka} /> </div>
-                        <div> <img src={konfetka} /> </div>
-                        <div> <img src={miniVinetta} /> </div>
-                        <div> <img src={plombirSlivka} /> </div>
-                        <div> <img src={smetana10} /> </div>
-                        <div> <img src={qatiq} /> </div>
-                        <div> <img src={chempion} /> </div>
-                        <div> <img src={konizar} /> </div>
-                        <div> <img src={qaymoq} /> </div>
-                        <div> <img src={xonadon} /> </div>
-                        <div> <img src={ayron} /> </div>
-                        <div> <img src={yogurt} /> </div>
-                        <div> <img src={kefir} /> </div>
-                        <div> <img src={tvorog} /> </div>
-                        <div> <img src={semechka} /> </div>
-                        <div> <img src={semechka25} /> </div>
-                    </OwlCarousel>
-                </Col>
-            </Row>
-        </Container>
-    </>);
+                        <div className={styles.videoAtBox}>
+                            <img src={semechka25}/>
+                        </div>
+                    </Col>
+                    <Col xl={5} lg={5} md={5}>
+                        <div className={styles.VideoWrapper}>
+                            <ReactPlayer url={video03}
+                                         className='react-player'
+                                         width='100%'
+                                         height='80%'
+                                         controls
+                            />
+                        </div>
+                    </Col>
+
+                    <Col xl={{span: 5, offset: 1}}
+                         lg={{span: 5, offset: 1}}
+                         md={{span: 5, offset: 1}}
+                    >
+                        <div className={styles.VideoWrapper}>
+                            <ReactPlayer url={video02}
+                                         className='react-player'
+                                         width='100%'
+                                         height='80%'
+                                         controls
+                            />
+                        </div>
+                    </Col>
+                    <Col xl={5} lg={5} md={5}>
+                        <div className={styles.videoAtBox}>
+                            <img src={stakanchik}/>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xl={12} className={styles.carouselOwl}>
+                        <OwlCarousel
+                            options={options}
+                        >
+                            <div><img src={lider}/></div>
+                            <div><img src={qaymoqliPlombir}/></div>
+                            <div><img src={qaymoqliPlombirShokolad}/></div>
+                            <div><img src={multimeva}/></div>
+                            <div><img src={mevaTamli}/></div>
+                            <div><img src={mevaTamli2}/></div>
+                            <div><img src={exotic}/></div>
+                            <div><img src={multifrukt2}/></div>
+                            <div><img src={shokolatGalzurniy}/></div>
+                            <div><img src={vaflenniy}/></div>
+                            <div><img src={rojka}/></div>
+                            <div><img src={stakanchik}/></div>
+                            <div><img src={palochka}/></div>
+                            <div><img src={ayranPalochka}/></div>
+                            <div><img src={konfetka}/></div>
+                            <div><img src={miniVinetta}/></div>
+                            <div><img src={plombirSlivka}/></div>
+                            <div><img src={smetana10}/></div>
+                            <div><img src={qatiq}/></div>
+                            <div><img src={chempion}/></div>
+                            <div><img src={konizar}/></div>
+                            <div><img src={qaymoq}/></div>
+                            <div><img src={xonadon}/></div>
+                            <div><img src={ayron}/></div>
+                            <div><img src={yogurt}/></div>
+                            <div><img src={kefir}/></div>
+                            <div><img src={tvorog}/></div>
+                            <div><img src={semechka}/></div>
+                            <div><img src={semechka25}/></div>
+                        </OwlCarousel>
+                    </Col>
+                </Row>
+            </Container>
+        </Element>
+    </>
 };
-export default Portfolio;
+export default Portfolio

@@ -4,9 +4,10 @@ import {Col, Container, Row} from "react-bootstrap";
 import collect from '../../assets/footer/collect.png'
 import logofooter from '../../assets/footer/logoFooter.png'
 
-const Footer = (props) => {
-    return (<>
-        <Container fluid className={styles.footerWrapper}>
+const Footer = () => {
+    return <>
+        <Container fluid>
+            <div className={styles.footerWrapper}>
             <Row>
                 <Col xl={6}>
                     <div className={styles.wrapperContent}>
@@ -30,7 +31,8 @@ const Footer = (props) => {
                     </div>
                 </Col>
             </Row>
+            </div>
         </Container>
-    </>);
-};
-export default Footer;
+    </>
+}
+export default Footer

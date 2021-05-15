@@ -26,6 +26,7 @@
 }
 
 .paralax{
+    padding-top: 110px;
     height: 150%;
 }
 
@@ -69,5 +70,19 @@
     background-repeat-x: repeat;
     background-repeat-y: no-repeat;
     width: 97.8%;
+}
+
+@media (min-width: 1px)and (max-width: 575.9px) {
+    .zigZag{
+        width: 91.8%;
+    }
+}
+@media (min-width: 576px)and (max-width: 767.9px) {
+    .zigZag{
+        display: none;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 991.9px) {
 
 }

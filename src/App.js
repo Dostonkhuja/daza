@@ -1,14 +1,13 @@
-import './App.css';
 import Home from "./Components/Home/Home";
 import Menu from "./Components/Navbar/Menu";
+import Footer from "./Components/Footer/Footer";
 import Company from "./Components/Company/Company";
 import Products from "./Components/Products/Products";
-import Portfolio from "./Components/Portfolio/Portfolio";
 import Contacts from "./Components/Contacts/Contacts";
-import Footer from "./Components/Footer/Footer";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 const App = () => {
-    return <div className='App'>
+    return <>
         <Menu/>
         <Home/>
         <Company/>
@@ -16,7 +15,7 @@ const App = () => {
         <Portfolio/>
         <Contacts/>
         <Footer/>
-    </div>
+    </>
 }
 
 export default App;

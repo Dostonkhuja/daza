@@ -1,18 +1,17 @@
 import React from 'react';
-import {Carousel, Col, Container, Row} from "react-bootstrap";
 import styles from "./ourAdvice.module.css";
-import blackquoe from "../../../assets/products/icon/blackquote.png";
+import {Carousel, Col, Container, Row} from "react-bootstrap";
+import blackquote from "../../../assets/products/icon/blackquote.png";
 
 const OurAdvice = () => {
-    return (
-        <Container fluid>
+    return <Container fluid>
             <Row>
                 <Col xl={12}>
                     <div className={styles.backgroundCoruselBox}>
                         <Carousel>
                             <Carousel.Item interval={1000}>
                                 <div className={styles.wrapperCarouselElemts}>
-                                    <img src={blackquoe}/>
+                                    <img src={blackquote}/>
                                     <p className={styles.textCorousel}>
                                         Bizning maqsad – mahsulot foydali, demak tabiiy bo‘lishi shart. Asl mahsulot
                                         shtrix-kod, ishlab chiqaruvchi nomi, DST raqami, tarkibi, hajmi, yaroqlilik
@@ -25,7 +24,7 @@ const OurAdvice = () => {
                             </Carousel.Item>
                             <Carousel.Item interval={1000}>
                                 <div className={styles.wrapperCarouselElemts}>
-                                    <img src={blackquoe}/>
+                                    <img src={blackquote}/>
                                     <p className={styles.textCorousel}>
                                         Biz xaridorlarga : muzqaymoq, qatiq, qaymoq, kefir, smetana, tvorog, ayron,
                                         yogurt, suzma, brinza kabi sut mahsulotlarini taklif qilamiz. Doimiy xaridorlar
@@ -41,7 +40,6 @@ const OurAdvice = () => {
                 </Col>
             </Row>
         </Container>
-    );
-};
+}
 
-export default OurAdvice;
+export default OurAdvice

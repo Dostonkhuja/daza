@@ -1,5 +1,5 @@
-.backgroundBlock{
-    padding-top: 114px;
+.backgroundBlock {
+    padding-top: 150px;
     padding-bottom: 120px;
     background-image: url("../../assets/company/backgroundPhotoOne.jpg");
     position: relative;
@@ -26,10 +26,11 @@
     opacity: 0.93;
 }
 
-.companyTitleBox{
+.companyTitleBox {
 
 }
-.companyTitleBox h1{
+
+.companyTitleBox h1 {
     text-align: center;
     color: #222222;
     font-family: 'Nunito', sans-serif;
@@ -51,13 +52,13 @@
     letter-spacing: 3px;
 }
 
-.DespcriptionBox{
+.DespcriptionBox {
     padding: 50px;
     padding-top: 150px;
 
 }
 
-.DespcriptionBox h3{
+.DespcriptionBox h3 {
     font-size: 26px;
     line-height: 25px;
     margin-top: 50px;
@@ -67,23 +68,150 @@
     color: #222222;
 }
 
-.DespcriptionBox p{
+.DespcriptionBox p {
     font-family: 'Rubik', sans-serif;
     color: #8c8c8c;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
-.DespcriptionBox p img{
+
+.DespcriptionBox p img {
     width: 100px;
     margin-bottom: 20px;
 }
 
-.wrapperBoxImages{
+.wrapperBoxImages {
     position: relative;
 
 }
-.wrapperBoxImages img{
+
+.wrapperBoxImages img {
     max-width: 100%;
     margin-top: 300px;
+}
+
+
+@media (min-width: 768px)and (max-width: 991.9px) {
+    .backgroundBlock {
+        padding-top: 70px;
+    }
+
+    .companyTitleBox h1 {
+        font-size: 38px;
+    }
+
+    .companyTitleBox p {
+        font-size: 24px;
+    }
+
+    .DespcriptionBox {
+        padding: 0;
+    }
+
+    .DespcriptionBox h3 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .DespcriptionBox p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .wrapperBoxImages img {
+        display: none;
+    }
+
+    .dazaSery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dazaSery img {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 576px)and (max-width: 767.9px) {
+
+    .backgroundBlock {
+        padding-top: 30px;
+    }
+
+    .companyTitleBox h1 {
+        font-size: 32px;
+    }
+
+    .companyTitleBox p {
+        font-size: 20px;
+    }
+
+    .DespcriptionBox {
+        padding: 0;
+    }
+
+    .DespcriptionBox h3 {
+        text-align: center;
+    }
+
+    .DespcriptionBox p {
+        text-align: center;
+    }
+
+    .wrapperBoxImages img {
+        display: none;
+    }
+
+    .dazaSery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dazaSery img {
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 1px)and (max-width: 575.9px) {
+
+    .backgroundBlock {
+        padding-top: 30px;
+    }
+
+    .companyTitleBox h1 {
+        font-size: 20px;
+    }
+
+    .companyTitleBox p {
+        font-size: 14px;
+    }
+
+    .DespcriptionBox {
+        padding: 0;
+    }
+
+    .DespcriptionBox h3 {
+        text-align: center;
+    }
+
+    .DespcriptionBox p {
+        text-align: center;
+    }
+
+    .wrapperBoxImages img {
+        display: none;
+    }
+
+    .dazaSery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dazaSery img {
+        margin-top: 35px;
+    }
 }

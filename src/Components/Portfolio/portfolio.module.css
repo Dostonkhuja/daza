@@ -1,5 +1,6 @@
 
 .BackgroundImage{
+    padding-top: 150px;
     background-image: url("../../assets/portfolio-video/background.jpg");
     position: relative;
     overflow: hidden;

@@ -1,10 +1,12 @@
 
 .footerWrapper {
-    width: 97.85%;
+    width: 100%;
     background-image: url("../../assets/footer/background.jpg");
     background-attachment: fixed;
+    background-origin: padding-box;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     color: #000000;
     font-size: 18px;
 }
@@ -25,4 +27,17 @@
 
 .wrapperContent p{
     color: #FFFFFF;
+}
+@media (min-width: 1px)and (max-width: 575.9px) {
+    .wrapperContent {
+        padding-top: 100px;
+        text-align: center;
+    }
+}
+@media (min-width: 576px)and (max-width: 767.9px) {
+
+}
+
+@media (min-width: 768px)and (max-width: 991.9px) {
+
 }

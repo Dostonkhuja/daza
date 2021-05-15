@@ -12,8 +12,9 @@
 .NumberIcon {
     position: absolute;
     top: 157px;
-    left: 136px;
     width: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .iconCover {
@@ -56,5 +57,47 @@
 
 .customBg img {
     width: 100%;
+}
+
+
+@media (min-width: 1px)and (max-width: 575.9px) {
+    .NumberIconWrapper {
+        padding-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .NumberIcon {
+        top: 90px;
+    }
+
+    .customBg img {
+        display: none;
+    }
+}
+
+@media (min-width: 576px)and (max-width: 767.9px) {
+    .customBg img {
+        display: none;
+    }
+
+    .NumberIconWrapper {
+        padding-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .NumberIcon {
+        top: 90px;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 991.9px) {
+    .NumberIconWrapper {
+        padding-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .NumberIcon {
+        top: 100px;
+    }
 }
 
