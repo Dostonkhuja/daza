@@ -63,7 +63,10 @@ import semechka25 from "../../../assets/products/product-galarey/semechki25.jpg"
 import paketBanner from "../../../assets/products/product-galarey banner/paket.jpg";
 import paket from "../../../assets/products/product-galarey/paket.jpg";
 
+import {useTranslation} from "react-i18next";
+
 const ProductGalarey = () => {
+    const {t} = useTranslation()
     return <div className={styles.ProductsbackgroundBlock}>
         <Row>
             <Col xl={4} sm={6} md={6} lg={4}>
@@ -71,210 +74,210 @@ const ProductGalarey = () => {
                     <img src={liderBanner} className={styles.ProductPhotoBanner}/>
                     <img src={lider} className={styles.ProductPhoto}/>
                 </div>
-                <h3 className={styles.productWrapperTitle}>LIDER</h3>
+                <h3 className={styles.productWrapperTitle}>{t("product-galarey.product1")}</h3>
             </Col>
             <Col xl={4} sm={6} md={6} lg={4}>
                 <div className={styles.wrapperProductPhotos}>
                     <img src={qaymoqliPlombirBanner} className={styles.ProductPhotoBanner}/>
                     <img src={qaymoqliPlombir} className={styles.ProductPhoto}/>
                 </div>
-                <h3 className={styles.productWrapperTitle}>QAYMOQLI PLOMBIR</h3>
+                <h3 className={styles.productWrapperTitle}>{t("product-galarey.product2")}</h3>
             </Col>
             <Col xl={4} sm={6} md={6} lg={4}>
                 <div className={styles.wrapperProductPhotos}>
                     <img src={qaymoqliPlombirShokoladBanner} className={styles.ProductPhotoBanner}/>
                     <img src={qaymoqliPlombirShokolad} className={styles.ProductPhoto}/>
                 </div>
-                <h3 className={styles.productWrapperTitle}>QAYMOQLI PLOMBIR – SHOKOLADLI</h3>
+                <h3 className={styles.productWrapperTitle}>{t("product-galarey.product3")}</h3>
             </Col>
             <Col xl={4} sm={6} md={6} lg={4}>
                 <div className={styles.wrapperProductPhotos}>
                     <img src={multimevaBanner} className={styles.ProductPhotoBanner}/>
                     <img src={multimeva} className={styles.ProductPhoto}/>
                 </div>
-                <h3 className={styles.productWrapperTitle}>QAYMOQLI MUZQAYMOQ – MULTIMEVALI</h3>
+                <h3 className={styles.productWrapperTitle}>{t("product-galarey.product4")}</h3>
             </Col>
             <Col xl={4} sm={6} md={6} lg={4}>
                 <div className={styles.wrapperProductPhotos}>
                     <img src={mevaTamliBanner} className={styles.ProductPhotoBanner}/>
                     <img src={mevaTamli} className={styles.ProductPhoto}/>
                 </div>
-                <h3 className={styles.productWrapperTitle}>MEVA TA’MLI QAYMOQLIK MUZQAYMOQ</h3>
+                <h3 className={styles.productWrapperTitle}>{t("product-galarey.product5")}</h3>
             </Col>
             <Col xl={4} sm={6} md={6} lg={4}>
                 <div className={styles.wrapperProductPhotos}>
                     <img src={mevaTamli2Banner} className={styles.ProductPhotoBanner}/>
                     <img src={mevaTamli2} className={styles.ProductPhoto}/>
                 </div>
-                <h3 className={styles.productWrapperTitle}>MEVA TA’MLI QAYMOQLIK MUZQAYMOQ</h3>
+                <h3 className={styles.productWrapperTitle}>{t("product-galarey.product6")}</h3>
             </Col>
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={exoticBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={exotic} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>KREMLI MUZQAYMOQ - DF EXOTIC</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product7")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={multifrukt2Banner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={multifrukt2} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>QAYMOQLI MUZQAYMOQ – MULTIFRUKT</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product8")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={shokolatGalzurniyBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={shokolatGalzurniy} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>SHOKOLADLI QAYMOQLI MUZQAYMOQ</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product9")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={vaflenniyBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={vaflenniy} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>VAFLILI MUZQAYMOQ</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product10")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={rojkaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={rojka} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>VAFLILI-SHOKOLADLI MUZQAYMOQ</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product11")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={stakanchikBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={stakanchik} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>VAFLI STAKANLI MUZQAYMOQ</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product12")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={palochkaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={palochka} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>TAYOQCHALI QAYMOQLI MUZQAYMOQ</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product13")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={ayranPalochkaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={ayranPalochka} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>TAYOQCHADAGI MUZLATILGAN AYRON</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product14")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={konfetkaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={konfetka} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>MUZQAYMOQ - "KONFETKA"</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product15")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={miniVinettaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={miniVinetta} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>MINI-VIENETTA</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product16")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={plombirSlivkaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={plombirSlivka} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>QAYMOQLI PLOMBIR</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product17")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={smetana10Banner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={smetana10} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>10%, 15%, 20% YOG‘LI SMETANA</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product18")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={qatiqBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={qatiq} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>OLIY NAVLI QATIQ - 1 L.</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product19")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={chempionBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={chempion} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>OLIY NAVLI QATIQ - CHEMPION, CHEMPION+</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product20")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={konizarBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={konizar} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>PARHEZLI QATIQ - "YANGI HAYOT", "KONIZAR"</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product21")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={qaymoqBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={qaymoq} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>QAYMOQ</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product22")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={xonadonBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={xonadon} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>QATIQ - "XONADON" - 1 L.</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product23")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={ayronBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={ayron} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>AYRON</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product24")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={yogurtBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={yogurt} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>YOGURT</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product25")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={kefirBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={kefir} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>KEFIR</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product26")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={tvorogBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={tvorog} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>OLIY NAVLI YOG‘SIZ TVOROG</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product27")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={semechkaBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={semechka} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>QOVURILGAN KUNGA BOQAR PISTASI</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product28")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={semechka25Banner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={semechka25} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>QOVURILGAN KUNGA BOQAR PISTASI - 25 GR.</h3>*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product29")}</h3>*/}
             {/*</Col>*/}
             {/*<Col xl={4} sm={6} md={6} lg={4}>*/}
             {/*    <div className={styles.wrapperProductPhotos}>*/}
             {/*        <img src={paketBanner} className={styles.ProductPhotoBanner}/>*/}
             {/*        <img src={paket} className={styles.ProductPhoto}/>*/}
             {/*    </div>*/}
-            {/*    <h3 className={styles.productWrapperTitle}>POLIMER PLENKADAN PAKETLAR*/}
+            {/*    <h3 className={styles.productWrapperTitle}>{t("product-galarey.product30")}*/}
             {/*    </h3>*/}
             {/*</Col>*/}
         </Row>

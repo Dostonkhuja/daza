@@ -10,53 +10,55 @@ import packageIcon from "../../../assets/products/icon/number-Bag-Icon.png";
 import iceCreamIcon from "../../../assets/products/icon/number-IceCream-icon.png";
 import paralaxBackground from "../../../assets/products/layout-background/service-1.jpg";
 
-const ProductInNumber = () => {
-    return <Container fluid>
-            <Parallax strength={500}>
-                <Background className={styles.customBg}>
-                    <img src={paralaxBackground}/>
-                </Background>
-                <Row>
-                    <Col xl={12}>
-                        <Row>
-                            <Col xl={3} lg={3} md={6}>
-                                <div className={styles.NumberIconWrapper}>
-                                    <img src={iceCreamIcon} className={styles.NumberIcon}/>
-                                    <img src={bgIconProductNumber} className={styles.iconCover}/>
-                                    <h1>17</h1>
-                                    <h4>Muzqaymoq <br/> mahsulotlari</h4>
-                                </div>
-                            </Col>
-                            <Col xl={3} lg={3} md={6}>
-                                <div className={styles.NumberIconWrapper}>
-                                    <img src={dairyIcon} className={styles.NumberIcon}/>
-                                    <img src={bgIconProductNumber} className={styles.iconCover}/>
-                                    <h1>10</h1>
-                                    <h4>Sut <br/> mahsulotlari</h4>
-                                </div>
+import {useTranslation} from "react-i18next";
 
-                            </Col>
-                            <Col xl={3} lg={3} md={6}>
-                                <div className={styles.NumberIconWrapper}>
-                                    <img src={seedsIcon} className={styles.NumberIcon}/>
-                                    <img src={bgIconProductNumber} className={styles.iconCover}/>
-                                    <h1>2</h1>
-                                    <h4>qovurilgan kungaboqar pistasi</h4>
-                                </div>
-                            </Col>
-                            <Col xl={3} lg={3} md={6}>
-                                <div className={styles.NumberIconWrapper}>
-                                    <img src={packageIcon} className={styles.NumberIcon}/>
-                                    <img src={bgIconProductNumber} className={styles.iconCover}/>
-                                    <h1>1</h1>
-                                    <h4>polimer plyonkadan <br/> paketlar</h4>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-            </Parallax>
-        </Container>
+const ProductInNumber = () => {
+    const {t} = useTranslation()
+    return <Container fluid>
+        <Parallax strength={500}>
+            <Background className={styles.customBg}>
+                <img src={paralaxBackground}/>
+            </Background>
+            <Row>
+                <Col xl={12}>
+                    <Row>
+                        <Col xl={3} lg={3} md={6}>
+                            <div className={styles.NumberIconWrapper}>
+                                <img src={iceCreamIcon} className={styles.NumberIcon}/>
+                                <img src={bgIconProductNumber} className={styles.iconCover}/>
+                                <h1>17</h1>
+                                <h4>{t("product-number.title1-part1")}<br/>{t("product-number.title1-part2")}</h4>
+                            </div>
+                        </Col>
+                        <Col xl={3} lg={3} md={6}>
+                            <div className={styles.NumberIconWrapper}>
+                                <img src={dairyIcon} className={styles.NumberIcon}/>
+                                <img src={bgIconProductNumber} className={styles.iconCover}/>
+                                <h1>10</h1>
+                                <h4>{t("product-number.title2-part1")}<br/>{t("product-number.title2-part2")}</h4>
+                            </div>
+                        </Col>
+                        <Col xl={3} lg={3} md={6}>
+                            <div className={styles.NumberIconWrapper}>
+                                <img src={seedsIcon} className={styles.NumberIcon}/>
+                                <img src={bgIconProductNumber} className={styles.iconCover}/>
+                                <h1>2</h1>
+                                <h4>{t("product-number.title3")}</h4>
+                            </div>
+                        </Col>
+                        <Col xl={3} lg={3} md={6}>
+                            <div className={styles.NumberIconWrapper}>
+                                <img src={packageIcon} className={styles.NumberIcon}/>
+                                <img src={bgIconProductNumber} className={styles.iconCover}/>
+                                <h1>1</h1>
+                                <h4>{t("product-number.title4-part1")} <br/>{t("product-number.title4-part2")}</h4>
+                            </div>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </Parallax>
+    </Container>
 }
 
 export default ProductInNumber

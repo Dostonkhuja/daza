@@ -27,6 +27,7 @@
 
 .wrapperContent p{
     color: #FFFFFF;
+    font-size: 22px;
 }
 @media (min-width: 1px)and (max-width: 575.9px) {
     .wrapperContent {

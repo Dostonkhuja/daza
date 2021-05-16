@@ -6,8 +6,10 @@ import mevali from '../../assets/company/s-fruktom.png'
 import daza_cream from '../../assets/company/cream.png'
 import daza_dairy from '../../assets/company/dairy.png'
 import daza_seeds from '../../assets/company/seeds.jpg'
+import {useTranslation} from "react-i18next";
 
 const Company = () => {
+    const {t} = useTranslation()
     return <>
         <Element name="company">
             <Container fluid>
@@ -17,39 +19,19 @@ const Company = () => {
                             <Row>
                                 <Col xl={12} lg={12} md={12} sm={12}>
                                     <div className={styles.companyTitleBox}>
-                                        <h1>MChJ «DAZA FOODS» QK.</h1>
-                                        <p>
-                                            MChJ «DAZA FOODS» O‘zbekiston-Bolgariya qo‘shma korxonasiga
-                                            2013 yilda tashkil qilingan sut zavodi bazasida asos solingan.
-                                        </p>
-                                        <p>
-                                            MChJ "DAZA FOODS" QK Farg‘ona vodiysida sut mahsulotlari va
-                                            muzqaymoq ishlab chiqaruvchilar orasida yetakchi o‘rinlardan birini
-                                            egallaydi.
-                                        </p>
+                                        <h1> {t('company.title-company')}</h1>
+                                        <p>{t('company.born-company')}</p>
+                                        <p>{t('company.level-company')}</p>
                                     </div>
                                 </Col>
                                 <Col xl={4} lg={4}>
                                     <div className={styles.DespcriptionBox}>
-                                        <h3>30 nomdagi Mahsulotlar</h3>
-                                        <p>
-                                            Hozirgi kunda korxonada «DAZA» brendi ostida 30 nomdagi sertifikatlangan
-                                            mahsulotlar ishlab chiqariladi. Ishlab chiqarish quvvati sutkasiga 7
-                                            tonnadan
-                                            ortiq sutni qayta ishlash imkonini beradi.
-                                        </p>
-                                        <h3>Turli tamlar</h3>
-                                        <p>
-                                            Korporativ o‘qitish va bolgariyalik hamkorlarimizdan olinadigan o‘ziga xos
-                                            retseptlar (an’anaviy retseptlar bilan birgalikda) yangi va tansiq sut
-                                            mahsulotlari hamda turli xil va ta’mdagi muzqaymoqlarni ishlab chiqarish
-                                            imkonini beradi.
-                                        </p>
-                                        <h3> Tozalik va sifat</h3>
-                                        <p>
-                                            Хom ashyoning tozaligi, zamonaviy ishlab chiqarish texnologiyalari,
-                                            qadoqlash materiallari.
-                                        </p>
+                                        <h3>{t('company.prducts-title1')}</h3>
+                                        <p>{t('company.prducts-description1')}</p>
+                                        <h3>{t('company.prducts-title2')}</h3>
+                                        <p>{t('company.prducts-description2')}</p>
+                                        <h3>{t('company.prducts-title3')}</h3>
+                                        <p>{t('company.prducts-description3')}</p>
                                     </div>
                                 </Col>
                                 <Col xl={4} lg={4}>
@@ -59,22 +41,15 @@ const Company = () => {
                                 </Col>
                                 <Col xl={4} lg={4}>
                                     <div className={styles.DespcriptionBox}>
-                                        <h3>Zamonaviy texnologiyalar</h3>
-                                        <p>
-                                            Korxonada zamonaviy Yevropa (Avstriya, Italiya, Chexiya) yuqori texnologik
-                                            ishlab chiqarish hamda qadoqlash uskunalari o‘rnatilgan.
-                                        </p>
+                                        <h3>{t('company.prducts-title4')}</h3>
+                                        <p>{t('company.prducts-description4')}</p>
                                         <br/>
-                                        <h3>Malakali mutaxasislar</h3>
-                                        <p>
-                                            Eng foydali va mazali mahsulotlar ishlab chiqarishga bo‘lgan o‘ziga xos
-                                            munosabat, barcha bosqichlar malakali mutaxassislarning qat’iy nazoratidan
-                                            o‘tadi.
-                                        </p>
+                                        <h3>{t('company.prducts-title5')}</h3>
+                                        <p>{t('company.prducts-description5')}</p>
                                         <p className={styles.dazaSery}>
                                             <br/><br/>
                                             <img src={daza_cream}/>, <img src={daza_dairy}/> <img src={daza_seeds}/>
-                                            <br/>seriyalarining mahsulotlari asl tabiiy sifatlarini saqlab qoladi.
+                                            <br/> {t('company.prducts-description6')}
                                         </p>
                                     </div>
                                 </Col>
