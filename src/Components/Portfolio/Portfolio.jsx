@@ -44,7 +44,7 @@ import semechka25 from "../../assets/products/product-galarey/semechki25.jpg";
 
 const Portfolio = (props) => {
     const options = {
-        items: 6,
+        items: 4,
         nav: true,
         navText: ["<div class='nav-btn prev-slide'>  <  </div>", "<div class='nav-btn next-slide'> > </div>"],
         rewind: true,

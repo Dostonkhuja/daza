@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./ourProducts.module.css";
 import {Col, Container, Row} from "react-bootstrap";
 import packages from "../../../assets/products/icon/package.png";
-import iceCream from "../../../assets/products/icon/iceCream.png";
+import iceCreamm from "../../../assets/products/icon/iceCreamm.png";
 import sunflower from "../../../assets/products/icon/sunflower.png";
 import dairyGreen from "../../../assets/products/icon/dairyGreen.png";
 import {useTranslation} from "react-i18next";
@@ -17,7 +17,7 @@ const OurProducts = () => {
                     </Col>
                     <Col xl={3} lg={3} sm={6}>
                         <div className={styles.overProductsItem}>
-                            <img src={iceCream}/>
+                            <img src={iceCreamm}/>
                             <h3>{t("our-products.ice-cream")}</h3>
                             <p>{t("our-products.ice-cream-description")}</p>
                         </div>

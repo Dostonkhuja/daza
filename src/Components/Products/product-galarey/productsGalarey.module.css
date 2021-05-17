@@ -71,6 +71,15 @@
     font-weight: 600;
 }
 
+.wrapperButtonDown{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapperButtonDown button img{
+   width: 50px;
+}
+
 
 @media (min-width: 576px)and (max-width: 767.9px) {
     .productWrapperTitle:after {
