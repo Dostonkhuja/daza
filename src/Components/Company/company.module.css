@@ -77,7 +77,8 @@
 }
 
 .DespcriptionBox p img {
-    width: 100px;
+    width: 60px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -140,6 +141,10 @@
         padding-top: 30px;
     }
 
+    .companyTitleBox {
+        margin-top: 50px;
+    }
+
     .companyTitleBox h1 {
         font-size: 32px;
     }
@@ -179,6 +184,10 @@
 
     .backgroundBlock {
         padding-top: 30px;
+    }
+    
+    .companyTitleBox {
+        margin-top: 50px;
     }
 
     .companyTitleBox h1 {

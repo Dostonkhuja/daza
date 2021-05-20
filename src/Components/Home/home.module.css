@@ -5,6 +5,7 @@
     background-color: #263881;
     padding-bottom: 80px;
 }
+
 .wrapperHome:before{
     content: "";
     background-image: url('../../assets/home/Untitled-1_1920X.png');
@@ -18,7 +19,9 @@
  }
 
 .wrapperHomeTitle{
-    margin-top: 150px;
+
+    opacity: 0;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,49 +43,66 @@
 }
 
 .multifructImage{
-    margin-left: 9vw;
-    margin-top: 8vw;
+    opacity: 1;
+    margin-left: 1vw;
+    margin-top: 4vw;
     width: 60%;
 }
 
 @media (min-width: 768px)and (max-width: 991.9px) {
     .wrapperHomeTitle{
-        margin-top: 100px;
-    }
-    .wrapperHomeTitle{
-
+        margin-left: 30px;
+        margin-top: 200px;
     }
     .imageCol{
      padding: 0;
+    }
+    .multifructImage{
+        width: 260px;
+        margin-right: 20px;
+        margin-top: 70px;
     }
 }
 
 @media (min-width: 576px)and (max-width: 767.9px) {
     .wrapperHomeTitle{
-        margin-top: 70px;
+        margin-top: 150px;
+
+    }
+    .wrapperHomeTitle h1{
+        font-size: 70px;
     }
     .imageCol{
         display: flex;
         justify-content: center;
     }
     .multifructImage{
-        width: 200px;
-        margin-right: 50px;
-        margin-top: 3vw;
+        width: 160px;
+        margin-right: 130px;
+    }
+    .wrapperCarousel{
+        padding-left: 130px;
+        margin-top: -130px;
     }
 }
 
 @media (min-width: 1px)and (max-width: 575.9px) {
     .wrapperHomeTitle{
-        margin-top: 70px;
+        margin-top: 160px;
+        padding-bottom: 30px;
+    }
+    .wrapperHomeTitle h1{
+        font-size: 50px;
     }
     .imageCol{
         display: flex;
         justify-content: center;
     }
     .multifructImage{
-        width: 200px;
-        margin-right: 50px;
-        margin-top: 3vw;
+        width: 150px;
+    }
+    .wrapperCarousel{
+
+        margin-top: -130px;
     }
 }

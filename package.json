@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
+    "gsap": "^3.6.1",
     "i18next": "^20.2.4",
     "i18next-browser-languagedetector": "^6.1.1",
     "i18next-http-backend": "^1.2.4",
@@ -21,6 +22,8 @@
     "react-player-controls": "^1.1.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
+    "react-viewer": "^3.2.2",
+    "vanilla-tilt": "^1.7.0",
     "video-react": "^0.14.1",
     "web-vitals": "^1.0.1"
   },

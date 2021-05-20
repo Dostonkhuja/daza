@@ -22,7 +22,9 @@ import multifrukt2 from "../../assets/products/product-galarey/multifrukt2.jpg";
 import shokolatGalzurniy from "../../assets/products/product-galarey/shokolad-glazurniy.jpg";
 import vaflenniy from "../../assets/products/product-galarey/vaflinniy.jpg";
 import rojka from "../../assets/products/product-galarey/rojka.jpg";
+import rojkaPng from "../../assets/products/product-galarey/rojkaPNG.png";
 import stakanchik from "../../assets/products/product-galarey/stakanchik.jpg";
+import stakanchikPng from "../../assets/products/product-galarey/stakanchikPNG.png";
 import palochka from "../../assets/products/product-galarey/palochka.jpg";
 import ayranPalochka from "../../assets/products/product-galarey/ayran.jpg";
 import konfetka from "../../assets/products/product-galarey/konfetka.jpg";
@@ -40,6 +42,8 @@ import kefir from "../../assets/products/product-galarey/kefir.jpg";
 import tvorog from "../../assets/products/product-galarey/tvorog.jpg";
 import semechka from "../../assets/products/product-galarey/semechka.jpg";
 import semechka25 from "../../assets/products/product-galarey/semechki25.jpg";
+import semechka25Png from "../../assets/products/product-galarey/semechki25PNG.png";
+import Tilt from "../common/Tilt";
 
 
 const Portfolio = (props) => {
@@ -51,6 +55,8 @@ const Portfolio = (props) => {
         autoplay: true,
         slideBy: 2,
     };
+
+
 
     return <>
         <Element name='portfolio'>
@@ -72,16 +78,22 @@ const Portfolio = (props) => {
                     </Col>
                     <Col xl={5} lg={5} md={5}>
                         <div className={styles.videoAtBox}>
-                            <img src={rojka}/>
+                            <Tilt>
+                                <img src={rojkaPng}/>
+                            </Tilt>
                         </div>
                     </Col>
                     <Col xl={{span: 5, offset: 1}}
                          lg={{span: 5, offset: 1}}
                          md={{span: 5, offset: 1}}
                     >
+
                         <div className={styles.videoAtBox}>
-                            <img src={semechka25}/>
+                            <Tilt>
+                            <img src={semechka25Png}/>
+                            </Tilt>
                         </div>
+
                     </Col>
                     <Col xl={5} lg={5} md={5}>
                         <div className={styles.VideoWrapper}>
@@ -109,7 +121,10 @@ const Portfolio = (props) => {
                     </Col>
                     <Col xl={5} lg={5} md={5}>
                         <div className={styles.videoAtBox}>
-                            <img src={stakanchik}/>
+                            <Tilt>
+                                <img src={stakanchikPng}/>
+                            </Tilt>
+
                         </div>
                     </Col>
                 </Row>

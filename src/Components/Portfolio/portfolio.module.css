@@ -34,16 +34,20 @@
 }
 
 .videoAtBox{
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #FFFFFF;
     width: 99%;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    height: 100%;
+    /*box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
-.videoAtBox img{
-  width: 71%;
+
+.videoAtBox img {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .carouselOwl{

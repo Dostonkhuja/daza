@@ -24,10 +24,11 @@
 .wrapperProductPhotos {
     position: relative;
     display: block;
-    background: #f8ebee;
-    padding: 20px;
+    /*background: #f8ebee;*/
+    background: #ffffff;
+    padding: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .wrapperProductPhotos:hover {
