@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/daza/static/css/main.c947f54f.chunk.css",
-    "main.js": "/daza/static/js/main.1cbd4d32.chunk.js",
-    "main.js.map": "/daza/static/js/main.1cbd4d32.chunk.js.map",
+    "main.js": "/daza/static/js/main.cf4b3160.chunk.js",
+    "main.js.map": "/daza/static/js/main.cf4b3160.chunk.js.map",
     "runtime-main.js": "/daza/static/js/runtime-main.10c9ae3c.js",
     "runtime-main.js.map": "/daza/static/js/runtime-main.10c9ae3c.js.map",
     "static/css/2.b04cbaaf.chunk.css": "/daza/static/css/2.b04cbaaf.chunk.css",
@@ -118,6 +118,6 @@
     "static/css/2.b04cbaaf.chunk.css",
     "static/js/2.f88829ba.chunk.js",
     "static/css/main.c947f54f.chunk.css",
-    "static/js/main.1cbd4d32.chunk.js"
+    "static/js/main.cf4b3160.chunk.js"
   ]
 }
