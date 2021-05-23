@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "item1": "Asosiy",
+    "item2": "Kompaniya haqida",
+    "item3": "Mahsulotlar",
+    "item4": "Portfolio",
+    "item5": "Kontaktlar",
+    "item6": "Prays-list"
+  },
+  "company": {
+    "title-company": "MChJ «DAZA FOODS» QK.",
+    "born-company": "MChJ «DAZA FOODS» O‘zbekiston-Bolgariya qo‘shma korxonasiga 2013 yilda tashkil qilingan sut zavodi bazasida asos solingan.",
+    "level-company": " MChJ \"DAZA FOODS\" QK Farg‘ona vodiysida sut mahsulotlari va muzqaymoq ishlab chiqaruvchilar orasida yetakchi o‘rinlardan birini egallaydi.",
+    "prducts-title1": "30 nomdagi Mahsulotlar",
+    "prducts-title2": "Turli tamlar",
+    "prducts-title3": "Tozalik va sifat",
+    "prducts-title4": "Zamonaviy texnologiyalar",
+    "prducts-title5": "Malakali mutaxasislar",
+    "prducts-description1": " Hozirgi kunda korxonada «DAZA» brendi ostida 30 nomdagi sertifikatlangan mahsulotlar ishlab chiqariladi. Ishlab chiqarish quvvati sutkasiga 7 tonnadan ortiq sutni qayta ishlash imkonini beradi.",
+    "prducts-description2": " Korporativ o‘qitish va bolgariyalik hamkorlarimizdan olinadigan o‘ziga xos retseptlar (an’anaviy retseptlar bilan birgalikda) yangi va tansiq sut mahsulotlari hamda turli xil va ta’mdagi muzqaymoqlarni ishlab chiqarish imkonini beradi.",
+    "prducts-description3": "Хom ashyoning tozaligi, zamonaviy ishlab chiqarish texnologiyalari,qadoqlash materiallari.",
+    "prducts-description4": "Korxonada zamonaviy Yevropa (Avstriya, Italiya, Chexiya) yuqori texnologik ishlab chiqarish hamda qadoqlash uskunalari o‘rnatilgan.",
+    "prducts-description5": "Eng foydali va mazali mahsulotlar ishlab chiqarishga bo‘lgan o‘ziga xos munosabat, barcha bosqichlar malakali mutaxassislarning qat’iy nazoratidan o‘tadi.",
+    "prducts-description6": "seriyalarining mahsulotlari asl tabiiy sifatlarini saqlab qoladi."
+  },
+  "our-products": {
+    "product-title": "Bizning mahsulotlar",
+    "ice-cream": "MUZQAYMOQ",
+    "ice-cream-description": "Plombir, qaymoqlik, sutli, mayin...",
+    "dairy": "SUT MAHSULOTLARI",
+    "dairy-description": "Qatiq, qaymoq, kefir, smetana, tvorog, ayron, yogurt, suzma, brinza...",
+    "seeds": "QOVURILGAN KUNGABOQAR PISTALARI",
+    "seeds-description": "Pista ...",
+    "bag": "POLIMER PLYONKADAN PAKETLAR",
+    "bag-description": "Polimer plyonkadan paketlar (shu jumladan dastaksiz)"
+  },
+  "product-galarey": [
+    {"product": "LIDER"},
+    {"product": "QAYMOQLI PLOMBIR"},
+    {"product": "QAYMOQLI PLOMBIR – SHOKOLADLI"},
+    {"product": "QAYMOQLI MUZQAYMOQ – MULTIMEVALI"},
+    {"product": "MEVA TA’MLI QAYMOQLIK MUZQAYMOQ"},
+    {"product": "MEVA TA’MLI QAYMOQLIK MUZQAYMOQ"},
+    {"product": "KREMLI MUZQAYMOQ - DF EXOTIC"},
+    {"product": "QAYMOQLI MUZQAYMOQ – MULTIFRUKT"},
+    {"product": "SHOKOLADLI QAYMOQLI MUZQAYMOQ"},
+    {"product": "VAFLILI MUZQAYMOQ"},
+    {"product": "VAFLILI-SHOKOLADLI MUZQAYMOQ"},
+    {"product": "VAFLI STAKANLI MUZQAYMOQ"},
+    {"product": "TAYOQCHALI QAYMOQLI MUZQAYMOQ"},
+    {"product": "TAYOQCHADAGI MUZLATILGAN AYRON"},
+    {"product": "MUZQAYMOQ - \"KONFETKA\""},
+    {"product": "MINI-VIENETTA"},
+    {"product": "QAYMOQLI PLOMBIR"},
+    {"product": "10%, 15%, 20% YOG‘LI SMETANA"},
+    {"product": "OLIY NAVLI QATIQ - 1 L."},
+    {"product": "OLIY NAVLI QATIQ - CHEMPION, CHEMPION+"},
+    {"product": "PARHEZLI QATIQ - \"YANGI HAYOT\", \"KONIZAR\""},
+    {"product": "QAYMOQ"},
+    {"product": "QATIQ - \"XONADON\" - 1 L."},
+    {"product": "AYRON"},
+    {"product": "YOGURT"},
+    {"product": "KEFIR"},
+    {"product": "OLIY NAVLI YOG‘SIZ TVOROG"},
+    {"product": "QOVURILGAN KUNGA BOQAR PISTASI"},
+    {"product": "QOVURILGAN KUNGA BOQAR PISTASI - 25 GR."},
+    {"product": "POLIMER PLENKADAN PAKETLAR"}
+  ],
+  "our-advice": {
+    "text1": "Bizning maqsad – mahsulot foydali, demak tabiiy bo‘lishi shart. Asl mahsulot shtrix-kod, ishlab chiqaruvchi nomi, DST raqami, tarkibi, hajmi, yaroqlilik muddati va energetik qimmatiga ega bo‘ladi. Agar ovqat sifati va salomatligingizga e’tiborli bo‘lsangiz, bular juda qimmat va muhim axborotlardir!",
+    "text2": " Biz xaridorlarga : muzqaymoq, qatiq, qaymoq, kefir, smetana, tvorog, ayron, yogurt, suzma, brinza kabi sut mahsulotlarini taklif qilamiz. Doimiy xaridorlar bizning mahsulotlarimiz sifatini yuqori baholaydilar, bu haqida ularning ijobiy tavsiyalari dalolat beradi. Biz mahsulotlarimizning mazali sifatini yaxshilashga katta e’tibor qaratamiz."
+  },
+  "product-number": {
+    "title1-part1": "Muzqaymoq",
+    "title1-part2": "mahsulotlari",
+    "title2-part1": "Sut",
+    "title2-part2": " mahsulotlari",
+    "title3": "qovurilgan kungaboqar pistasi",
+    "title4-part1": "polimer plyonkadan",
+    "title4-part2": "paketlar"
+  },
+  "footer": {
+     "logo-description":"barcha huquqlar himoyalangan",
+    "company": "O'zbekiston-Bolgariya qo'shma korxonasi.",
+    "adress": " Manzil: Farg'ona viloyati\n O'zbekiston tumani.",
+    "tel": " Tel.: (+998 90) 161 82 82",
+    "email": " Elektron manzil: support@dazafoods.com"
+  }
+}
