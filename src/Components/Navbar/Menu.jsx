@@ -19,11 +19,11 @@ const Menu = (props) => {
 
     useEffect(()=> {
         const tl = gsap.timeline()
-        tl.fromTo(navbar,{position:'absalute'},{position:'fixed',backgroundColor:"#ff0032"})
+        tl.fromTo(navbar,1,{},{position:"fixed",backgroundColor:"#ff0032", paddingTop:'10px',paddingBottom:'10px'})
         ScrollTrigger.create({
             animation:tl,
             trigger:navbar,
-            start:'bottm -300vw',
+            start:'bottm -400vw',
             end:'bottom',
             scrub:true,
             // pin:true
@@ -31,12 +31,9 @@ const Menu = (props) => {
     },[])
 
 
-
-
-    return <Container fluid>
+    return <Container fluid className='p-0'>
         <Row>
-            <Col xl={12} lg={12} md={12} sm={12} className={styles.navbarCol} >
-                <div ref={el => navbar = el} className={styles.navbar}>
+            <Col xl={12} lg={12} md={12} sm={12} className={styles.navbarCol}  ref={el => navbar = el} >
                 <Navbar expand="lg"   >
                     <Navbar.Brand href="#home"><img src={logo} className={styles.logo}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className='border-0'>
@@ -85,7 +82,6 @@ const Menu = (props) => {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                </div>
             </Col>
         </Row>
     </Container>

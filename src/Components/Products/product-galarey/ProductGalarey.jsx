@@ -6,6 +6,9 @@ import {products} from "./ProductsArray";
 import iconDown from '../../../assets/products/icon/Down.ico'
 import VanillaTilt from "vanilla-tilt";
 import Viewer from 'react-viewer'
+import {gsap} from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const ProductGalarey = () => {
     const [count, setCount] = useState(6)
@@ -15,12 +18,18 @@ const ProductGalarey = () => {
     let tilts = useRef([]);
     useEffect(() => {tilts.current.map(el =>  VanillaTilt.init(el, options) )}, [options]);
 
-
     const [visible, setVisible] = useState(false);
     const [idViewer, setIdViewer] = useState(0);
 
+    let ourProductTitle= useRef(null)
+    useEffect(()=> {
+        const tl = gsap.timeline()
+        tl.fromTo(ourProductTitle,2, {y: 300 ,opacity:0}, {y: 0, opacity:1})
+        ScrollTrigger.create({animation: tl, trigger: ourProductTitle, start: 'top 600px',})
+    },[])
 
-    return <div className={styles.ProductsbackgroundBlock}>
+
+    return <div className={styles.ProductsbackgroundBlock} ref={el=>ourProductTitle = el}>
         <Viewer
             visible={visible}
             onClose={() => {setVisible(false)}}
@@ -57,6 +66,6 @@ const ProductGalarey = () => {
             </Col>
         </Row>
     </div>
-};
+}
 
 export default ProductGalarey;

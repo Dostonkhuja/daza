@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import styles from "./productsInNumber.module.css";
 import {Parallax, Background} from "react-parallax";
@@ -8,19 +8,30 @@ import dairyIcon from "../../../assets/products/icon/number-Dairy-Icon.png";
 import seedsIcon from "../../../assets/products/icon/number-Seeds-Icon.png";
 import packageIcon from "../../../assets/products/icon/number-Bag-Icon.png";
 import iceCreamIcon from "../../../assets/products/icon/number-IceCream-icon.png";
-import paralaxBackground from "../../../assets/products/layout-background/service-1.jpg";
-
+import paralaxBackground from "../../../assets/bino.jpg";
 import {useTranslation} from "react-i18next";
+import {gsap} from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
 
 const ProductInNumber = () => {
     const {t} = useTranslation()
-    return <Container fluid>
-        <Parallax strength={500}>
+
+    let fide= useRef(null)
+    useEffect(()=> {
+        const tl = gsap.timeline()
+        tl.fromTo(fide,2, {x: 600 ,opacity:0}, {x: 0, opacity:1})
+        ScrollTrigger.create({animation: tl, trigger: fide, start: 'top top',})
+    },[])
+
+    return <Parallax strength={500}>
             <Background className={styles.customBg}>
                 <img src={paralaxBackground}/>
             </Background>
+        <Container fluid>
             <Row>
-                <Col xl={12}>
+                <Col xl={12} ref={el=>fide=el}>
                     <Row>
                         <Col xl={3} lg={3} md={6}>
                             <div className={styles.NumberIconWrapper}>
@@ -57,8 +68,8 @@ const ProductInNumber = () => {
                     </Row>
                 </Col>
             </Row>
-        </Parallax>
     </Container>
+    </Parallax>
 }
 
 export default ProductInNumber

@@ -3,16 +3,21 @@ import {Element} from 'react-scroll'
 import styles from './home.module.css'
 import {Carousel, Col, Container, Row} from "react-bootstrap";
 import multifrukt from '../../assets/home/multifrukt.png'
+
 import image2 from '../../assets/home/2.png'
 import image3 from '../../assets/home/3t.png'
 import image4 from '../../assets/home/4t.png'
 import image5 from '../../assets/home/5t.png'
 import image6 from '../../assets/home/6t.png'
-import {Power3, TweenMax} from 'gsap'
+import {gsap, Power3, TweenMax} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Home = (props) => {
 
     let titleItem= useRef(null)
+
 
     useEffect(()=>{
         TweenMax.to(titleItem,1,{opacity:1,y:-100,ease:Power3.easeOut})
@@ -20,7 +25,7 @@ const Home = (props) => {
 
     return <>
         <Element name='home'>
-            <Container fluid>
+            <Container fluid className={styles.wrapperHomeCol}>
                 <Row>
                     <Col xl={12} lg={12} md={12} className={styles.homeCol}>
                         <div className={styles.wrapperHome}>

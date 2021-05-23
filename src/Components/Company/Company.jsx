@@ -17,18 +17,28 @@ const Company = () => {
 
     let imageBlock = useRef(null)
     let titleBlock = useRef(null)
+    let descBlock = useRef(null)
+    let descBlockRight = useRef(null)
 
     useEffect(()=> {
         const tl = gsap.timeline()
-        tl.fromTo(imageBlock,{y:200},{y:0})
-        ScrollTrigger.create({animation:tl, trigger:imageBlock, start:'top 800px',})
+        tl.fromTo(imageBlock,{y:300},{y:0})
+        ScrollTrigger.create({animation:tl, trigger:imageBlock, start:'center 800px',})
+
+        const tl1 = gsap.timeline()
+        tl1.fromTo(titleBlock,2,{y:300, opacity:0},{y:-50, opacity:1})
+        ScrollTrigger.create({animation:tl1, trigger:titleBlock, start:'top 1000px',})
+
+        const tl2 = gsap.timeline()
+        tl2.fromTo(descBlock,1,{x:-200, opacity:0},{x:0, opacity:1})
+        ScrollTrigger.create({animation:tl2, trigger:descBlock, start:'top 300px'})
+
+        const tl3 = gsap.timeline()
+        tl2.fromTo(descBlockRight,1,{x:200, opacity:0},{x:0, opacity:1},"-=1")
+        ScrollTrigger.create({animation:tl2, trigger:descBlockRight, start:'top 300px',})
+
     },[])
 
-    useEffect(()=> {
-        const tl = gsap.timeline()
-        tl.fromTo(titleBlock,1.5,{y:300, opacity:0},{y:-50, opacity:1})
-        ScrollTrigger.create({animation:tl, trigger:titleBlock, start:'top 1000px',})
-    },[])
 
     return <>
         <Element name="company">
@@ -44,7 +54,7 @@ const Company = () => {
                                         <p>{t('company.level-company')}</p>
                                     </div>
                                 </Col>
-                                <Col xl={4} lg={4} >
+                                <Col xl={4} lg={4} ref={el=> {descBlock= el}}>
                                     <div className={styles.DespcriptionBox} >
                                         <h3>{t('company.prducts-title1')}</h3>
                                         <p>{t('company.prducts-description1')}</p>
@@ -59,7 +69,7 @@ const Company = () => {
                                         <img src={mevali} ref={el=> {imageBlock= el}}/>
                                     </div>
                                 </Col>
-                                <Col xl={4} lg={4}>
+                                <Col xl={4} lg={4} ref={el=> {descBlockRight= el}}>
                                     <div className={styles.DespcriptionBox}>
                                         <h3>{t('company.prducts-title4')}</h3>
                                         <p>{t('company.prducts-description4')}</p>

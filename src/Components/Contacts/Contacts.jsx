@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Element} from 'react-scroll'
 import styles from '../Contacts/contacts.module.css'
 import {Col, Container, Row} from "react-bootstrap";
@@ -13,8 +13,9 @@ import instagramIcon from '../../assets/contacts/instagram.png'
 const Contacts = (props) => {
     return <>
         <Element name='contacts'>
-            <Container fluid>
+
                 <Parallax bgImage={office} strength={250} className={styles.paralax}>
+                    <Container fluid >
                     <Row className={styles.socialNetworkWrapper}>
                         <Col xl={3} lg={3} md={3} sm={6}>
                             <a target="_blank" href="https://www.facebook.com/dazafoods01/">
@@ -50,9 +51,9 @@ const Contacts = (props) => {
                             </a>
                         </Col>
                     </Row>
+                    </Container>
                 </Parallax>
                 <div className={styles.zigZag}/>
-            </Container>
         </Element>
     </>
 }

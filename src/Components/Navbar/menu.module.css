@@ -1,17 +1,10 @@
 
 .navbarCol {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
-}
-
-.navbar {
-    z-index: 999;
     width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    padding-right: 15px;
     padding-top: 35px;
     padding-bottom: 30px;
     background-color: #263881;

@@ -8,8 +8,8 @@ import {useTranslation} from "react-i18next";
 const Footer = () => {
     const {t} = useTranslation()
     return <>
-        <Container fluid>
             <div className={styles.footerWrapper}>
+                <Container fluid>
             <Row>
                 <Col xl={6}>
                     <div className={styles.wrapperContent}>
@@ -34,8 +34,8 @@ const Footer = () => {
                     </div>
                 </Col>
             </Row>
-            </div>
         </Container>
+            </div>
     </>
 }
 export default Footer

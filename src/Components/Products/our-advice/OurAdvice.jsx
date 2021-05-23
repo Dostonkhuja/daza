@@ -1,15 +1,28 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import styles from "./ourAdvice.module.css";
 import {Carousel, Col, Container, Row} from "react-bootstrap";
 import blackquote from "../../../assets/products/icon/blackquote.png";
 import {useTranslation} from "react-i18next";
+import {gsap} from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const OurAdvice = () => {
     const {t} = useTranslation()
-    return <Container fluid>
+
+    let fide= useRef(null)
+    useEffect(()=> {
+        const tl = gsap.timeline()
+        tl.fromTo(fide,1, {y: 300 ,opacity:0}, {y: 0, opacity:1})
+        ScrollTrigger.create({animation: tl, trigger: fide, start: 'top 100px',})
+    },[])
+
+
+    return  <div className={styles.backgroundCoruselBox} ref={el=>fide=el}>
+    <Container fluid>
         <Row>
             <Col xl={12}>
-                <div className={styles.backgroundCoruselBox}>
+
                     <Carousel>
                         <Carousel.Item interval={1000}>
                             <div className={styles.wrapperCarouselElemts}>
@@ -30,10 +43,11 @@ const OurAdvice = () => {
                             </div>
                         </Carousel.Item>
                     </Carousel>
-                </div>
+
             </Col>
         </Row>
     </Container>
+    </div>
 }
 
 export default OurAdvice

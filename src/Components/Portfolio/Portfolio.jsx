@@ -45,7 +45,6 @@ import semechka25 from "../../assets/products/product-galarey/semechki25.jpg";
 import semechka25Png from "../../assets/products/product-galarey/semechki25PNG.png";
 import Tilt from "../common/Tilt";
 
-
 const Portfolio = (props) => {
     const options = {
         items: 4,
@@ -55,7 +54,6 @@ const Portfolio = (props) => {
         autoplay: true,
         slideBy: 2,
     };
-
 
 
     return <>

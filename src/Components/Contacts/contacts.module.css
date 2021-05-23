@@ -20,6 +20,7 @@
     flex-direction: column;
     text-align: center;
 }
+
 .socialNetwork img{
     width: 100px;
     margin-bottom: 30px;
@@ -64,25 +65,13 @@
 
 .zigZag{
     position: absolute;
+    z-index: 500;
     background-image: url('../../assets/footer/zigzag.png');
     content: "";
     height: 25px;
     background-repeat-x: repeat;
     background-repeat-y: no-repeat;
-    width: 97.8%;
+    width: 100%;
 }
 
-@media (min-width: 1px)and (max-width: 575.9px) {
-    .zigZag{
-        display: none;
-    }
-}
-@media (min-width: 576px)and (max-width: 767.9px) {
-    .zigZag{
-        display: none;
-    }
-}
 
-@media (min-width: 768px)and (max-width: 991.9px) {
-
-}
