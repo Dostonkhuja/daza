@@ -5,7 +5,7 @@ import App from './App';
 
 
 ReactDOM.render(
-    <Suspense fallback={'loading...'}>
+    <Suspense fallback={' '}>
   <React.StrictMode>
     <App />
   </React.StrictMode>
