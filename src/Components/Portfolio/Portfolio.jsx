@@ -4,8 +4,8 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css'
 import 'react-owl-carousel2/src/owl.theme.green.css'
 import {Element} from 'react-scroll'
-
 import styles from './portfolio.module.css'
+
 import video01 from '../../assets/portfolio-video/01.mp4'
 import video02 from '../../assets/portfolio-video/02.mp4'
 import video03 from '../../assets/portfolio-video/03.mp4'
@@ -55,7 +55,6 @@ const Portfolio = (props) => {
         slideBy: 2,
     };
 
-
     return <>
         <Element name='portfolio'>
             <Container fluid className={styles.BackgroundImage}>
@@ -71,6 +70,7 @@ const Portfolio = (props) => {
                                          width='100%'
                                          height='80%'
                                          controls
+
                             />
                         </div>
                     </Col>
@@ -100,6 +100,8 @@ const Portfolio = (props) => {
                                          width='100%'
                                          height='80%'
                                          controls
+                                         playing={false}
+
                             />
                         </div>
                     </Col>

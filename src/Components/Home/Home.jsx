@@ -36,7 +36,7 @@ const Home = (props) => {
                                         <h3>tabiatdan andoza!</h3>
                                     </div>
                                 </Col>
-                                <Col  xl={6} lg={6} md={6} className={styles.imageCol} fade={true}>
+                                <Col  xl={6} lg={6} md={6} className={styles.imageCol}>
                                     <div className={styles.wrapperCarousel}>
                                         <Carousel controls={false} indicators={false} slide={false}>
                                             <Carousel.Item interval={300}>

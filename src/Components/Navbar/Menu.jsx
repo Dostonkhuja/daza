@@ -31,8 +31,8 @@ const Menu = (props) => {
     },[])
 
 
-    return <Container fluid className='p-0'>
-        <Row>
+    return <Container fluid>
+        <Row className={styles.navbarRow}>
             <Col xl={12} lg={12} md={12} sm={12} className={styles.navbarCol}  ref={el => navbar = el} >
                 <Navbar expand="lg"   >
                     <Navbar.Brand href="#home"><img src={logo} className={styles.logo}/></Navbar.Brand>

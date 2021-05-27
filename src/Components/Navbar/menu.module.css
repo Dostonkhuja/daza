@@ -1,14 +1,19 @@
 
+.navbarRow{
+    margin-right: 0;
+}
+
 .navbarCol {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
-    width: 100%;
+    /*width: 100%;*/
     padding-top: 35px;
     padding-bottom: 30px;
     background-color: #263881;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .logo {

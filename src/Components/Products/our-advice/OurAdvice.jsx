@@ -1,10 +1,10 @@
 import React, {useEffect, useRef} from 'react';
 import styles from "./ourAdvice.module.css";
 import {Carousel, Col, Container, Row} from "react-bootstrap";
-import blackquote from "../../../assets/products/icon/blackquote.png";
 import {useTranslation} from "react-i18next";
 import {gsap} from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import blackquote from "../../../assets/products/icon/blackquote.png";
 gsap.registerPlugin(ScrollTrigger)
 
 const OurAdvice = () => {
@@ -22,9 +22,8 @@ const OurAdvice = () => {
     <Container fluid>
         <Row>
             <Col xl={12}>
-
-                    <Carousel>
-                        <Carousel.Item interval={1000}>
+                    <Carousel   slide={false}>
+                        <Carousel.Item >
                             <div className={styles.wrapperCarouselElemts}>
                                 <img src={blackquote}/>
                                 <p className={styles.textCorousel}>
@@ -33,7 +32,7 @@ const OurAdvice = () => {
                                 <h3 className={styles.titleCarousel}>DAZA™</h3>
                             </div>
                         </Carousel.Item>
-                        <Carousel.Item interval={1000}>
+                        <Carousel.Item >
                             <div className={styles.wrapperCarouselElemts}>
                                 <img src={blackquote}/>
                                 <p className={styles.textCorousel}>
@@ -43,7 +42,6 @@ const OurAdvice = () => {
                             </div>
                         </Carousel.Item>
                     </Carousel>
-
             </Col>
         </Row>
     </Container>
